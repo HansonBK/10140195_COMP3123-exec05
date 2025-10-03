@@ -149,3 +149,35 @@ app.use((err,req,res,next) => {
    - Attach the ZIP file (`StudentID_COMP3123-exec05.zip`) along with your submission, if required.
 
 Let me know if you need any further help!
+
+
+Note:
+Student: Hussein Bani Khaled (ID: 101401959)
+Project: COMP3123 – Exercise 05 (Express.js Basics with Routing)
+
+Environment:
+- Node: v20.17.0
+- NPM:  10.8.2
+- Dependencies: express ^4.17.1
+
+How to run:
+1) npm i
+2) node index.js
+Base URL: http://localhost:8081
+
+Endpoints 
+1) GET  /home
+2) GET  /api/v1/user/profile
+3) POST /api/v1/user/login
+   Body (raw JSON): {"username":"Hanson","password":"Hanson@123"}
+4) GET  /api/v1/user/logout/bret
+
+Expected responses:
+- /home → HTML page with: <h1>Welcome to ExpressJs Tutorial</h1>
+- /api/v1/user/profile → full user.json
+- /api/v1/user/login → success/invalid username/invalid password messages as specified
+- /api/v1/user/logout/:username → <b>{username} successfully logged out.<b>
+
+Error handling:
+- Unhandled errors return status 500 with "Server Error"
+
